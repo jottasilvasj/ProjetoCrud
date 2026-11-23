@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Registros</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+
+    <div class="menu-cad">
+
+        <h1>Cadastrar Registros</h1>
+
+        <hr>
+
+        <form method="POST" action="cada.php">
+
+            <label for="txtnome">Nome:</label>
+            <input type="text" name="txtnome" id="txtnome" maxlength="40" required>
+
+            <label for="txtemail">E-mail:</label>
+            <input type="email" name="txtemail" id="txtemail" maxlength="40" required>
+
+            <label for="txtsenha">Senha:</label>
+            <input type="password" name="txtsenha" id="txtsenha" required>
+
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="txtsexo" value="F" checked>
+                    Feminino
+                </label>
+                <label>
+                    <input type="radio" name="txtsexo" value="M">
+                    Masculino
+                </label>
+            </div>
+
+            <label for="txtdata">Data de nascimento:</label>
+            <input type="date" name="txtdata" id="txtdata">
+
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+            <button type="button" onclick="location.href='index.html'">Menu</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

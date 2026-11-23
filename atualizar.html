@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Registros</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+
+    <div class="menu-cad">
+
+        <h1>Atualizar Registros</h1>
+
+        <form action="atualizar.php" method="POST">
+
+            <label>ID do registro:</label>
+            <input type="number" name="id_t" min="1" required>
+
+            <label>Novo nome:</label>
+            <input type="text" name="txtnome" maxlength="40" required>
+
+            <label>Novo e-mail:</label>
+            <input type="email" name="txtemail" maxlength="40" required>
+
+            <label>Nova senha (opcional):</label>
+            <input type="password" name="txtsenha">
+
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="txtsexo" value="F" required>
+                    Feminino
+                </label>
+                <label>
+                    <input type="radio" name="txtsexo" value="M">
+                    Masculino
+                </label>
+            </div>
+
+            <label>Data de nascimento (opcional):</label>
+            <input type="date" name="txtdata">
+
+            <button type="submit">Atualizar</button>
+
+            <a href="index.html">Voltar ao menu</a>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

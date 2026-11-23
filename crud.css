@@ -1,0 +1,146 @@
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
+/* Fundo */
+body {
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+/* Caixa principal */
+.menu-cad {
+    width: 650px;
+    max-width: 100%;
+    padding: 40px;
+    background: radial-gradient(circle, #c9dd15f7 0%, #934704 100%);
+    box-shadow: 0px 4px 12px rgba(124, 5, 5, 0.957);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+/* Títulos */
+.menu-cad h1 {
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Navegação */
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-cad a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu-cad a:hover {
+    color: #fff;
+    transform: scale(1.03);
+}
+
+/* Formulários */
+.menu-cad form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+
+.menu-cad input[type="text"],
+.menu-cad input[type="email"],
+.menu-cad input[type="password"],
+.menu-cad input[type="date"],
+.menu-cad input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #934704;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Radio */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Botões */
+.menu-cad button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #934704;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.menu-cad button:hover {
+    background-color: #633000;
+}
+
+/* Tabelas */
+.menu-cad table {
+    border-collapse: collapse;
+    background: white;
+    font-size: 14px;
+}
+
+.menu-cad th {
+    background-color: #934704;
+    color: white;
+}
+
+.menu-cad td,
+.menu-cad th {
+    padding: 8px;
+    border: 1px solid #633000;
+    overflow-wrap: anywhere;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+
+    .menu-cad {
+        width: 100%;
+        padding: 25px 15px;
+    }
+
+    .menu-cad h1 {
+        font-size: 25px;
+    }
+
+    .menu-cad table {
+        font-size: 11px;
+    }
+
+}

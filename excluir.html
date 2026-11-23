@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir Registros</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+
+    <div class="menu-cad">
+
+        <h1>Excluir Registros</h1>
+
+        <form action="excluir.php" method="POST"
+              onsubmit="return confirm('Tem certeza que deseja excluir este registro?')">
+
+            <label>ID do registro:</label>
+            <input type="number" name="id_t" min="1" required>
+
+            <button type="submit">Excluir Registro</button>
+
+            <a href="index.html">Voltar ao menu</a>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
